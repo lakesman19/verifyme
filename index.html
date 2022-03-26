@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google homepage</title>
+    <style>
+        .banner{
+            margin-top: 10%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .searchbar{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .searchbar > input{
+            width: 60%;
+            height: 30px;
+            float: left;
+            margin-right: 10px;
+            margin-left: 20%;
+        }
+
+        .searchbar-options{
+            width: 20%;
+            list-style: none;
+            margin: 0;
+            padding:0;
+            text-align: left;
+            display: inline;
+        }
+
+        .searchbar-options a{
+            text-decoration: none;
+        }
+
+        .button-container{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20%;
+        }
+
+        .button-container > button{
+            font-size: large;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* padding: top right bottom left */
+            /* padding: 10px 15px 10px 15px; */
+            /* padding: top/bottom right/left */
+            /* padding: 10px 15px; */
+
+        }
+
+        #first-btn{
+            margin-right: 10px;
+        }
+
+        .footer-links{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 40%;
+        }
+
+        .footer-links > li{
+            width: fit-content;
+            float: left;
+            margin-right: 20px;
+        }
+
+        /* this is for chaining child selectors */
+        .footer-links > li > a {
+            text-decoration: none;
+        }
+
+        .footer{
+            text-align: center;
+        }
+
+        .footer > a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="banner">
+        <img class="banner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" />
+    </h1>
+
+    <div class="searchbar">
+        <input type="text" />
+        <ul class="searchbar-options">
+            <li>
+                <a href="#">Advanced Search</a>
+            </li>
+            <li><a href="#">Language tools</a></li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button id="first-btn">Google Search</button>
+        <button>I'm feeling lucky</button>
+    </div>
+
+    <ul class="footer-links">
+        <li><a href="#">Advertising Programs</a></li>
+        <li><a href="#">Business Solutions</a></li>
+        <li><a href="#">About Google</a></li>
+    </ul>
+    <br />
+    <p class="footer">&copy; 2011 - <a href="#">Privacy</a></p>
+</body>
+</html>
